@@ -1,5 +1,7 @@
 package tictactoe;
 
-public final class MyWindow {
+import javax.swing.JFrame;
+
+public final class MyWindow extends JFrame{
 
 }
