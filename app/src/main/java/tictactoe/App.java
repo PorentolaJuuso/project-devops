@@ -3,7 +3,9 @@ package tictactoe;
 import javax.swing.Jframe;
 
 public final class App {
-
+    /**
+     * Private constructor for App.
+     */
     private App() {
 
     }
