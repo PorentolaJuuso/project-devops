@@ -9,6 +9,8 @@ public final class MyWindow extends JFrame{
     public static final int WINDOW_WIDTH = 400;
     public static final int WINDOW_HEIGHT = 400;
 
+    private boolean isXTurn = true;
+
     public MyWindow() {
         super("Tic-Tac-Toe");
 
