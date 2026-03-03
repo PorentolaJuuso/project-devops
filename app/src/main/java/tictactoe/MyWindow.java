@@ -18,6 +18,7 @@ public final class MyWindow extends JFrame {
 
         for (int i = 0; i < 9; i++) {
             JButton button = new JButton("");
+            button.setFont(new Font("Arial", Font.PLAIN, 40));
 
             button.addActionListener(e -> {
                 if (button.getText().equals("")) {
