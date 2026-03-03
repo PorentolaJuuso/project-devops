@@ -3,6 +3,7 @@ package tictactoe;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.GridLayout;
+import java.awt.Font;
 
 public final class MyWindow extends JFrame {
 
