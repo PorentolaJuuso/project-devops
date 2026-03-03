@@ -22,7 +22,7 @@ public final class MyWindow extends JFrame {
             JButton button = new JButton("");
             button.setFont(new Font("Arial", Font.BOLD, 60));
             button.setBackground(Color.DARK_GRAY);
-            button.setForeground(Color.CYAN);
+            button.setForeground(Color.WHITE);
 
             button.addActionListener(e -> {
                 if (button.getText().equals("")) {
