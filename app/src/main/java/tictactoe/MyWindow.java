@@ -23,7 +23,7 @@ public final class MyWindow extends JFrame {
         setLayout(new BorderLayout());
         statusLabel = new JLabel("Player X's Turn", JLabel.CENTER);
         JPanel gridPanel = new JPanel(new GridLayout(3, 3));
-        logic = new GameLogic(parentWindow, statusLabel, buttons);
+        logic = new GameLogic(this, statusLabel, buttons);
 
         for (int i = 0; i < 9; i++) {
             buttons[i] = new JButton("");
