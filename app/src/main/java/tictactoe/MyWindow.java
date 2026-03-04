@@ -3,21 +3,27 @@ package tictactoe;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.GridLayout;
+import java.awt.Font;
+import java.awt.Color;
+
 
 public final class MyWindow extends JFrame {
 
-    public static final int WINDOW_WIDTH = 400;
+    public static final int WINDOW_WIDTH = 450;
     public static final int WINDOW_HEIGHT = 400;
 
     private boolean isXTurn = true;
 
     public MyWindow() {
-        super("Tic-Tac-Toe");
-        setLayout(new GridLayout(3, 3)); 
+        super("Professional Tic-Tac-Toe");
+        setLayout(new GridLayout(3, 3));
 
         for (int i = 0; i < 9; i++) {
-            JButton button = new JButton(""); 
-            
+            JButton button = new JButton("");
+            button.setFont(new Font("Arial", Font.BOLD, 55));
+            button.setBackground(Color.DARK_GRAY);
+            button.setForeground(Color.WHITE);
+
             button.addActionListener(e -> {
                 if (button.getText().equals("")) {
                     button.setText(isXTurn ? "X" : "O");
@@ -26,9 +32,9 @@ public final class MyWindow extends JFrame {
             });
 
             add(button);
-        }        
+        }
         setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); 
+        setLocationRelativeTo(null);
     }
 }
