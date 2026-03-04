@@ -13,6 +13,7 @@ public final class MyWindow extends JFrame {
     public static final int WINDOW_HEIGHT = 400;
 
     private boolean isXTurn = true;
+    private JButton[] buttons = new JButton[9];
 
     public MyWindow() {
         super("Professional Tic-Tac-Toe");
