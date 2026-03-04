@@ -2,15 +2,18 @@ package tictactoe;
 
 import javax.swing.JLabel;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 public final class GameLogic implements Logic{
 
+    private MyWindow parentWindow;
     private JLabel statusLabel;
     private JButton[] buttons;
 
     private GameLogic() { }
 
-    public GameLogic(JLabel statusLabel, JButton[] buttons) {
+    public GameLogic(MyWindow parentWindow, JLabel statusLabel, JButton[] buttons) {
+        this.parentWindow = parentWindow;
         this.statusLabel = statusLabel;
         this.buttons = buttons;
     }
@@ -28,7 +31,7 @@ public final class GameLogic implements Logic{
             String b3 = buttons[pos[2]].getText();
 
             if (!b1.equals("") && b1.equals(b2) && b2.equals(b3)) {
-                javax.swing.JOptionPane.showMessageDialog(this, "Player " + b1 + " wins!");
+                javax.swing.JOptionPane.showMessageDialog(parentWindow, "Player " + b1 + " wins!");
                 resetBoard();
             }
         }
