@@ -8,9 +8,11 @@ import java.awt.Color;
 
 public class Menu extends JPanel {
     private JFrame window;
+    // Need the file that has the game logic here
 
     public Menu(JFrame window) {
         this.window = window;
+        // Need the file that has the game logic here "this.<file> = <file>;""
         initialize();
     }
 
@@ -61,6 +63,8 @@ public class Menu extends JPanel {
                 dialog.pack();
                 dialog.setLocationRelativeTo(window);
                 dialog.setVisible(true);
+
+                // Need to add the method to go to the game here "<file>.<method>(playercount);" (playercount is private field in menu class)
             }
         });
 
