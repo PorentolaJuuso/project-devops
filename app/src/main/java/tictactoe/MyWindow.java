@@ -26,9 +26,10 @@ public final class MyWindow extends JFrame {
             buttons[i].setForeground(Color.WHITE);
 
             final int index =i;
-            button.addActionListener(e -> {
+            buttons[i].addActionListener(e -> {
                 if (buttons[index].getText().equals("")) {
                     buttons[index].setText(isXTurn ? "X" : "O");
+                    checkWinner();
                     isXTurn = !isXTurn;
                 }
             });
