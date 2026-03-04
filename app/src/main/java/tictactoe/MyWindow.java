@@ -17,6 +17,14 @@ public final class MyWindow extends JFrame {
     private JLabel statusLabel;
     private Logic logic;
 
+    public void setIsXTurn(boolean isXTurn) {
+        this.isXTurn = isXTurn;
+    }
+
+    public boolean getIsXTurn() {
+        return isXTurn;
+    }
+
     public MyWindow() {
         super("Professional Tic-Tac-Toe");
 
