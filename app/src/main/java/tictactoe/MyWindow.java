@@ -20,19 +20,20 @@ public final class MyWindow extends JFrame {
         setLayout(new GridLayout(3, 3));
 
         for (int i = 0; i < 9; i++) {
-            JButton button = new JButton("");
-            button.setFont(new Font("Arial", Font.BOLD, 55));
-            button.setBackground(Color.DARK_GRAY);
-            button.setForeground(Color.WHITE);
+            buttons[i] = new JButton("");
+            buttons[i].setFont(new Font("Arial", Font.BOLD, 55));
+            buttons[i].setBackground(Color.DARK_GRAY);
+            buttons[i].setForeground(Color.WHITE);
 
+            final int index =i;
             button.addActionListener(e -> {
-                if (button.getText().equals("")) {
-                    button.setText(isXTurn ? "X" : "O");
+                if (buttons[index].getText().equals("")) {
+                    buttons[index].setText(isXTurn ? "X" : "O");
                     isXTurn = !isXTurn;
                 }
             });
 
-            add(button);
+            add(buttons[i]);
         }
         setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
