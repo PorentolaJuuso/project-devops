@@ -68,6 +68,7 @@ public class Menu extends JPanel {
                 JButton onePlayer = new JButton("1 Player"); // button for choosing to play on your own against ai
                 onePlayer.setFont(buttonFont); // sets the font, uses the earlier button font
                 onePlayer.setAlignmentX(Component.CENTER_ALIGNMENT); // makes sure the the item is centered
+                onePlayer.setMaximumSize(new Dimension(160, 70)); // max size so that the buttons are equal in size
                 onePlayer.addActionListener(ev -> {
                     playerCount = 1; // playing on your own against ai
                     dialog.dispose(); // closes pop up
@@ -76,6 +77,7 @@ public class Menu extends JPanel {
                 JButton twoPlayer = new JButton("2 Players"); // button for choosing to play with someoeone
                 twoPlayer.setFont(buttonFont); // sets the font, uses the earlier button font
                 twoPlayer.setAlignmentX(Component.CENTER_ALIGNMENT); // makes sure the the item is centered
+                twoPlayer.setMaximumSize(new Dimension(160, 70)); // max size so that the buttons are equal in size
                 twoPlayer.addActionListener(ev -> {
                     playerCount = 2; // playing with someone
                     dialog.dispose(); // pop up closes
@@ -92,10 +94,12 @@ public class Menu extends JPanel {
                 dialog.pack();
                 dialog.setLocationRelativeTo(window);
                 dialog.setVisible(true);
+                dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 
                 if (playerCount > 0) {
                     ((MyWindow) window).initializeGame(playerCount);
                 }
+
             }
         });
 
