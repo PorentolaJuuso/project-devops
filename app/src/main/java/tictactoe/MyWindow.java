@@ -117,21 +117,22 @@ public final class MyWindow extends JFrame {
     private void showEndGameOptions() {
         JPanel bottomPanel = new JPanel();
         JButton menuButton = new JButton("Back to Menu");
-
+// Adds an action listener to the menuButton that
+// clears the current content and shows the main menu.
         menuButton.addActionListener(e -> {
             this.getContentPane().removeAll();
             this.add(new Menu(this));
             this.revalidate();
             this.repaint();
         });
-    // Adds a panel at the bottom of the window containing
-    // the "Back to Menu" button and refreshes the layout.
+// Adds a panel at the bottom of the window containing
+// the "Back to Menu" button and refreshes the layout.
         bottomPanel.add(menuButton);
         this.add(bottomPanel, BorderLayout.SOUTH);
         this.revalidate();
         this.repaint();
     }
-    /** Makes the AI perform a move by clicking a random available button. */
+/** Makes the AI perform a move by clicking a random available button. */
     private void performAiMove() {
     int moveIndex = logic.getSmartMove();
     if (moveIndex != -1) {
