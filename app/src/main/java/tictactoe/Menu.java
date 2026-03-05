@@ -16,6 +16,11 @@ public class Menu extends JPanel {
     Font buttonFont = new Font("Arial", Font.BOLD, 18); // this font is used for the buttons
     Font dialogFont = new Font("Arial", Font.PLAIN, 16); // this font is used for the dialog object in start button.
 
+    /**
+     * This is constructor for the menu class
+     *
+     * @param window this is the mainframe of the project
+     */
     public Menu(JFrame window) {
         this.window = window;
         initialize();
