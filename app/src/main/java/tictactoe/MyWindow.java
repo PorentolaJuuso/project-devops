@@ -5,7 +5,6 @@ import java.awt.*;
 import javax.swing.SwingUtilities;
 
 public final class MyWindow extends JFrame {
-
     /**
      * A boolean for checking whether it's
      * the player X's turn.
@@ -143,6 +142,4 @@ public final class MyWindow extends JFrame {
             buttons[moveIndex].doClick();
         }
     }
-
-
 }
