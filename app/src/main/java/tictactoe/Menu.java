@@ -93,8 +93,8 @@ public class Menu extends JPanel {
                 dialog.add(dialogPanel);
                 dialog.pack();
                 dialog.setLocationRelativeTo(window);
-                dialog.setVisible(true);
                 dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+                dialog.setVisible(true);
 
                 if (playerCount > 0) {
                     ((MyWindow) window).initializeGame(playerCount);
