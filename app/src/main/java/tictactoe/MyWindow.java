@@ -27,6 +27,7 @@ public final class MyWindow extends JFrame {
      */
     private Logic logic;
     private int moveCount = 0;
+    private boolean isAiEnabled = true; // Temporary default for testing
 
     /**
      * Setter for isXTurn.
