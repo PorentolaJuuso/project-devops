@@ -12,6 +12,8 @@ public final class MyWindow extends JFrame {
 
     /**
      * Setter for isXTurn.
+     * @param isXTurn The boolean field for checking
+     * if it's the player X's turn
      */
     public void setIsXTurn(boolean isXTurn) {
         this.isXTurn = isXTurn;
