@@ -25,7 +25,7 @@ public class Menu extends JPanel {
 
         JButton startButton = new JButton("Start");
         startButton.setAlignmentX(Component.CENTER_ALIGNMENT);
-        startButton.setMaximumSize(new Dimension(200, 50));
+        startButton.setMaximumSize(new Dimension(120, 50));
 
         startButton.addActionListener(new ActionListener() {
             @Override
@@ -71,7 +71,7 @@ public class Menu extends JPanel {
 
         JButton quitButton = new JButton("Quit");
         quitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
-        quitButton.setMaximumSize(new Dimension(200, 50));
+        quitButton.setMaximumSize(new Dimension(120, 50));
         quitButton.addActionListener(e -> System.exit(0));
 
         add(Box.createVerticalGlue());
