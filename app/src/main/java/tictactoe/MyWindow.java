@@ -1,14 +1,7 @@
 package tictactoe;
 
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import java.awt.GridLayout;
-import java.awt.Font;
-import java.awt.Color;
-import javax.swing.JLabel;
-import java.awt.BorderLayout;
-import javax.swing.JPanel;
-
+import javax.swing.*;
+import java.awt.*;
 
 public final class MyWindow extends JFrame {
 
