@@ -42,6 +42,12 @@ public class Menu extends JPanel {
         startButton.setMaximumSize(new Dimension(120, 50)); // max size so that the buttons are equal in size
 
         startButton.addActionListener(new ActionListener() {
+
+            /**
+             * This method is to make sure that start button will work as intended. Lets the user decide between playing with ai or as 2 players
+             *
+             * @param ActionEvent is Actionlisteners parameter that needs to be done so the button can take inputs.
+             */
             @Override
             public void actionPerformed(ActionEvent e) {
                 JDialog dialog = new JDialog(window, "Choose your players", true);
