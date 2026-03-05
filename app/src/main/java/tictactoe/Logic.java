@@ -1,6 +1,9 @@
 package tictactoe;
 
 public interface Logic {
-    boolean checkWinner();
+    /**
+     * A method for checking the game's winner.
+     */
+    void checkWinner();
     void resetBoard();
 }
