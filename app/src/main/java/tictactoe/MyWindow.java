@@ -15,6 +15,10 @@ public final class MyWindow extends JFrame {
      * grid.
      */
     private JButton[] buttons = new JButton[9];
+    /**
+     * The JLabel used for displaying which player's
+     * turn it is.
+     */
     private JLabel statusLabel;
     private Logic logic;
     private int moveCount = 0;
