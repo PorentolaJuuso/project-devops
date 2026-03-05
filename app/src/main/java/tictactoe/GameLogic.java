@@ -94,4 +94,28 @@ private boolean wouldWin(int index, String mark) {
     return win;
 }
 
+    /**
+     * Selects a move by prioritizing winning, then blocking, 
+     * then falling back to random choice.
+     */
+    public int getSmartMove() {
+        List<Integer> available = getAvailableMoves();
+        if (available.isEmpty()) return -1;
+
+        // Can AI win?
+        for (int i : available) {
+            if (wouldWin(i, "O")) return i;
+        }
+
+        // block?
+        for (int i : available) {
+            if (wouldWin(i, "X")) return i;
+        }
+
+        // fallback to random
+        return getRandomMove();
+    }
+
+
+
 }
