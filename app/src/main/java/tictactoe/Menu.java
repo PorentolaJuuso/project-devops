@@ -12,7 +12,7 @@ public class Menu extends JPanel {
     private JFrame window;
     private int playerCount = 0; // is used in startbutton, decides how many playeres are playing the game
 
-    Font titleFont = new Font("Arial", Font.BOLD, 30); // this font is used for the titles
+    Font titleFont = new Font("Raleway", Font.BOLD, 45); // this font is used for the titles
     Font buttonFont = new Font("Arial", Font.BOLD, 18); // this font is used for the buttons
     Font dialogFont = new Font("Arial", Font.PLAIN, 16); // this font is used for the dialog object in start button.
 
