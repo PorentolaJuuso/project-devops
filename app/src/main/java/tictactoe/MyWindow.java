@@ -71,6 +71,7 @@ public final class MyWindow extends JFrame {
         JPanel gridPanel = new JPanel(new GridLayout(3, 3));
         logic = new GameLogic(this, statusLabel, buttons);
 
+    // Loop to initialize all 9 grid buttons
         for (int i = 0; i < 9; i++) {
             buttons[i] = new JButton("");
             buttons[i].setFont(new Font("Arial", Font.BOLD, 55));
