@@ -50,6 +50,13 @@ public class Menu extends JPanel {
              */
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                /**
+                 * dialog is used as a pop up when you click the start button, it takes the arguments:
+                 * parent frame (in this case its mainframe named window),
+                 * string as a title for the pop up,
+                 * boolean, deciding whether the pop up is modal or not.
+                 */
                 JDialog dialog = new JDialog(window, "Choose your players", true);
                 JPanel dialogPanel = new JPanel();
                 dialogPanel.setLayout(new BoxLayout(dialogPanel, BoxLayout.Y_AXIS));
