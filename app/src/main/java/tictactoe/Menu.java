@@ -95,7 +95,7 @@ public class Menu extends JPanel {
                 dialog.add(dialogPanel); // adds the dialog.panel to the pop up
                 dialog.pack(); // resizes the window to fit the contents
 
-                SwingUtilities.invokeLater(() -> {
+                SwingUtilities.invokeLater(() -> { // makes sure that all the layout additions have been done and its stable before trying to center screen
                     dialog.setLocationRelativeTo(null); // centers the pop up
                 });
                 dialog.setVisible(true); // sets the pop up visible
