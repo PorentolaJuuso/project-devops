@@ -13,7 +13,7 @@ import java.awt.event.ActionListener;
 
 public class Menu extends JPanel {
     private JFrame window;
-    // Need the file that has the game logic here
+    private int playerCount = 0;
 
     /**
      *Creates menu panel that contains:
