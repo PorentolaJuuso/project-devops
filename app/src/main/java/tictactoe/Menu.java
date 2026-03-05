@@ -32,9 +32,9 @@ public class Menu extends JPanel {
     private void initialize() {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
-        JLabel titleLabel = new JLabel("Tic-Tac-Toe");
-        titleLabel.setFont(titleFont);
-        titleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JLabel titleLabel = new JLabel("Tic-Tac-Toe"); // title of the game
+        titleLabel.setFont(titleFont); // uses the titlefont variable
+        titleLabel.setAlignmentX(Component.CENTER_ALIGNMENT); // makes sure that the label is in center of the boxLayout
 
         JButton startButton = new JButton("Start");
         startButton.setFont(buttonFont);
