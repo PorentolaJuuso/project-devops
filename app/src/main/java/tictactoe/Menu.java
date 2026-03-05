@@ -67,18 +67,18 @@ public class Menu extends JPanel {
 
                 JButton onePlayer = new JButton("1 Player"); // button for choosing to play on your own against ai
                 onePlayer.setFont(buttonFont); // sets the font, uses the earlier button font
-                onePlayer.setAlignmentX(Component.CENTER_ALIGNMENT); // makes sure the the item is centered.
+                onePlayer.setAlignmentX(Component.CENTER_ALIGNMENT); // makes sure the the item is centered
                 onePlayer.addActionListener(ev -> {
-                    playerCount = 1; // playing on your own against ai.
+                    playerCount = 1; // playing on your own against ai
                     dialog.dispose(); // closes pop up
                 });
 
-                JButton twoPlayer = new JButton("2 Players");
-                twoPlayer.setFont(buttonFont);
-                twoPlayer.setAlignmentX(Component.CENTER_ALIGNMENT);
+                JButton twoPlayer = new JButton("2 Players"); // button for choosing to play with someoeone
+                twoPlayer.setFont(buttonFont); // sets the font, uses the earlier button font
+                twoPlayer.setAlignmentX(Component.CENTER_ALIGNMENT); // makes sure the the item is centered
                 twoPlayer.addActionListener(ev -> {
-                    playerCount = 2;
-                    dialog.dispose();
+                    playerCount = 2; // playing with someone
+                    dialog.dispose(); // pop up closes
                 });
 
                 dialogPanel.add(Box.createRigidArea(new Dimension(0, 10)));
