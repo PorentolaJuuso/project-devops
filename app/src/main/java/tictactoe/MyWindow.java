@@ -13,7 +13,11 @@ public final class MyWindow extends JFrame {
     public boolean getIsXTurn() { return isXTurn; }
 
     public MyWindow() {
-        super("Professional Tic-Tac-Toe");
+        super("Tic-Tac-Toe");
+        setSize(400, 450);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+    }
 
         setLayout(new BorderLayout());
         statusLabel = new JLabel("Player X's Turn", JLabel.CENTER);
