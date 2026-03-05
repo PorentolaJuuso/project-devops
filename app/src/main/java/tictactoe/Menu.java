@@ -25,6 +25,7 @@ public class Menu extends JPanel {
 
         JButton startButton = new JButton("Start");
         startButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        startButton.setMaximumSize(new Dimension(200, 50));
 
         startButton.addActionListener(new ActionListener() {
             @Override
