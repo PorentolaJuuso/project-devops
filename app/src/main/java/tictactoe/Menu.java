@@ -76,5 +76,6 @@ public class Menu extends JPanel {
         add(startButton);
         add(Box.createRigidArea(new Dimension(0, 10)));
         add(quitButton);
+        add(Box.createVerticalGlue());
     }
 }
