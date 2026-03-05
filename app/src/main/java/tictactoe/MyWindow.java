@@ -20,6 +20,8 @@ public final class MyWindow extends JFrame {
     }
     /**
      * Getter for isXTurn.
+     * @return The boolean field for checking 
+     * if it's the player X's turn
      */
     public boolean getIsXTurn() {
         return isXTurn;
