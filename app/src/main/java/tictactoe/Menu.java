@@ -71,6 +71,7 @@ public class Menu extends JPanel {
 
         JButton quitButton = new JButton("Quit");
         quitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        quitButton.setMaximumSize(new Dimension(200, 50));
         quitButton.addActionListener(e -> System.exit(0));
 
         add(Box.createVerticalGlue());
