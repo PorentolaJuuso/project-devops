@@ -89,6 +89,9 @@ public final class MyWindow extends JFrame {
                     else {
                         isXTurn = !isXTurn;
                         statusLabel.setText("Player " + (isXTurn ? "X" : "O") + "'s Turn");
+
+                        if (isAiEnabled && !isXTurn) {
+                            SwingUtilities.invokeLater(() -> performAiMove());
                     }
                 }
             });
@@ -117,4 +120,13 @@ public final class MyWindow extends JFrame {
         this.revalidate();
         this.repaint();
     }
+
+    private void performAiMove() {
+    int moveIndex = logic.getRandomMove();
+    if (moveIndex != -1) {
+        buttons[moveIndex].doClick();
+    }
+}
+
+
 }
