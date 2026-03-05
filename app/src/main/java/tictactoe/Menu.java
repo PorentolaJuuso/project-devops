@@ -40,9 +40,11 @@ public class Menu extends JPanel {
                 dialogPanel.setLayout(new BoxLayout(dialogPanel, BoxLayout.Y_AXIS));
 
                 JLabel dialogLabel = new JLabel("Choose how many players");
+                dialogLabel.setFont(titleFont);
                 dialogLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
                 JButton onePlayer = new JButton("1 Player");
+                onePlayer.setFont(buttonFont);
                 onePlayer.setAlignmentX(Component.CENTER_ALIGNMENT);
                 onePlayer.addActionListener(ev -> {
                     playerCount = 1;
@@ -50,6 +52,7 @@ public class Menu extends JPanel {
                 });
 
                 JButton twoPlayer = new JButton("2 Players");
+                twoPlayer.setFont(buttonFont);
                 twoPlayer.setAlignmentX(Component.CENTER_ALIGNMENT);
                 twoPlayer.addActionListener(ev -> {
                     playerCount = 2;
