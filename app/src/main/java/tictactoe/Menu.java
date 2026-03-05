@@ -9,6 +9,10 @@ public class Menu extends JPanel {
     private JFrame window;
     private int playerCount = 0;
 
+    Font titleFont = new Font("Arial", Font.BOLD, 30);
+    Font buttonFont = new Font("Arial", Font.BOLD, 18);
+    Font dialogFont = new Font("Arial", Font.PLAIN, 16);
+
     public Menu(JFrame window) {
         this.window = window;
         initialize();
