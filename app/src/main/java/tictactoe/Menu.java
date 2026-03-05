@@ -24,10 +24,11 @@ public class Menu extends JPanel {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         JLabel titleLabel = new JLabel("Tic-Tac-Toe");
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 30));
+        titleLabel.setFont(titleFont);
         titleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JButton startButton = new JButton("Start");
+        startButton.setFont(buttonFont);
         startButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         startButton.setMaximumSize(new Dimension(120, 50));
 
@@ -75,6 +76,7 @@ public class Menu extends JPanel {
 
         JButton quitButton = new JButton("Quit");
         quitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        quitButton.setFont(buttonFont);
         quitButton.setMaximumSize(new Dimension(120, 50));
         quitButton.addActionListener(e -> System.exit(0));
 
